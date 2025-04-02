@@ -14,7 +14,7 @@ initial-scale=1.0">
  <nav>
     <a href="#tentang">Tentang</a> |
      <a href="#kursus">Kursus</a> |
-     <a href="#kontak">Kontak</a>
+     <a href="#kontak">Kontak</a> |
      <a href="#pendaftaran">Pendaftaran</a>
     </nav>
     <section id="tentang">
@@ -52,34 +52,44 @@ initial-scale=1.0">
             <label for="message">Pesan:</label><br />
             <textarea id="message" name="message" rows="4" required></textarea><br />
             <br>
-            <button type="submit">Kirim</button>
         </form>
     </section>
+    
+    <h2>Pendaftaran</h2>
     <saction id="Pendaftaran">
        <form action="#" method="post">
         <label> Nama: </label>
         <input type="text" name="nama-lengkap"/>
+       </br>
         <br>
         <label>Email: </label>
-        <input type="password" name="pasword"/>
+        <input type="email" name="email"/>
+       </br>
+
         <br>
         <label>Jurusan: </label>
-        <input type="Checkbox" name="prodi"/> Sistem dan Teknologi Informasi
-        <input type="Checkbox" name="prodi"/> Bisnis Digital
-        <input type="Checkbox" name="prodi"/> Kewirausahaan
+        <input type="radio" name="prodi"/> Sistem dan Teknologi Informasi
+        <input type="radio" name="prodi"/> Bisnis Digital
+        <input type="radio" name="prodi"/> Kewirausahaan
+        </br>
+
         <br>
-        <label>Radio: </label>
+        <label>Jenis Kelamin: </label>
         <input type="radio" name="jenis-kelamin"/> Pria
         <input type="radio" name="jenis-kelamin"/> wanita
+        </br>
+
         <br>
         <label>Hobby: </label>
         <input type="Checkbox" name="Hobby"/> Tidur
         <input type="Checkbox" name="Hobby"/> Main game
         <input type="Checkbox" name="Hobby"/> Healing
+        </br>
+
         <br>
         <label>Submit: </label>
         <input type="submit" name="submit"/>
-        <br>
+        </br>
        </form>
     </saction>
 
