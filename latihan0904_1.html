@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>latihan pertemuan 6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<style>
+    body {
+        font-family: Arial;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .icon-box{
+        border: 1px solid rgb(176, 175, 175);
+        display: inline-block;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    .icon-box:hover {
+      border-color: purple;
+      animation: bounce 2s infinite;
+    }
+
+    .icon-box:hover i{
+      color: pink;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40%{
+            transform: translateY(-10px);
+        }
+        50%{
+            transform: translateY(-5PX);
+        }
+    }
+
+    .icon-box i {
+        color: blue;
+        font-size: 30px;
+        margin-bottom: 10px;
+        
+    }
+
+    .icon-box i.rotate {
+        animation: rotate 2s linear infinite;
+    }
+    
+    @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% {transform: rotate(360deg);}
+    }
+
+
+</style>
+<body>
+    <h1>Latihan Penggunaan Font awesome</h1>
+    <p>Berikut adalah beberapa contoh penggunaan ikon Font Awesome</p>
+
+    <div class="icon-box">
+        <i class="fas fa-user"></i>
+        <p>Profil</p>
+    </div>
+
+    <div class="icon-box">
+        <i class="fas fa-envelope rotate"></i>
+        <p>Email</p>
+    </div>
+
+    <div class="icon-box">
+        <i class="fas fa-phone"></i>
+        <p>Telepon</p>
+    </div>
+
+    <div class="icon-box">
+        <i class="fab fa-github"></i>
+        <p>Github</p>
+    </div>
+    
+    <div class="icon-box">
+        <i class="fab fa-linkedin"></i>
+        <p>Linked</p>
+    </div>
+
+    <div class="icon-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Lokasi</p>
+    </div>
+
+    <div class="icon-box">
+        <i class="fa-brands fa-instagram"></i>
+        <p>Instagram</p>
+    </div>
+
+    <div class="icon-box">
+        <i class="fa-solid fa-person-dress"></i>
+        <p>Website Pribadi</p>
+    </div>
+</body>
+</html>
